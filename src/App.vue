@@ -1,10 +1,19 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link> |
-      <router-link to="/skill">Skill</router-link> |
-      <router-link to="/contact">Contact</router-link>
+    <div class="header-outer">
+      <header>
+        <h1 class="site-title">
+          <router-link to="/">fo-ji's Portfolio</router-link>
+        </h1>
+      </header>
+      <nav id="gnav" class="header-nav">
+        <ul>
+          <li><router-link to="/">Home</router-link></li>
+          <li><router-link to="/about">About</router-link></li>
+          <li><router-link to="/skill">Skill</router-link></li>
+          <li><router-link to="/contact">Contact</router-link></li>
+        </ul>
+      </nav>
     </div>
     <router-view/>
   </div>
