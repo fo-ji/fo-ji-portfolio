@@ -182,3 +182,28 @@ $b-large-min: $b-medium-max + 1;
     background-color: transparent;
     transition: background-color .3s;
   }
+
+    /** Home */
+.home {
+  height: calc(100vh - 266px);
+
+  .container__home {
+    height: 65%;
+    position: relative;
+    
+    &--text {
+      width: 100vw;
+      position: absolute;
+      text-align: center;
+      bottom: 0;
+      font-size: 30px;
+    }
+
+    @media screen and (max-width: 480px) {
+      &--text {
+        font-size: 20px;
+        font-weight: bold;
+      }
+    }
+  }
+}
