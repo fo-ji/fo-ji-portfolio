@@ -16,11 +16,33 @@
       </nav>
     </div>
     <router-view/>
+    <nav class="footer-nav">
+      <ul>
+        <li><router-link to="/">Home</router-link></li>
+        <li><router-link to="/about">About</router-link></li>
+        <li><router-link to="/skill">Skill</router-link></li>
+        <li><router-link to="/contact">Contact</router-link></li>
+      </ul>
+    </nav>
+    <div class="sns-box">
+      <a href="https://twitter.com/foji89872898" target="_blank" class="sns-link">
+        <i class="fab twitter-icon"></i>
+      </a>
+      <a href="https://github.com/fo-ji" target="_blank" class="sns-link">
+        <i class="fab github-icon"></i>
+      </a>
+      <a href="https://qiita.com/fumiya1753" target="_blank" class="sns-link">
+        <i class="fab qiita-icon"></i>
+      </a>
+    </div>
+    <footer>
+      <div class="copyright-box">©️ 2020 fo-ji</div>
+    </footer>
   </div>
 </template>
 
 <style>
-#app {
+/* #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -39,5 +61,5 @@
 
 #nav a.router-link-exact-active {
   color: #42b983;
-}
+} */
 </style>

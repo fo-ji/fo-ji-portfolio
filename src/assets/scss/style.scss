@@ -27,6 +27,7 @@ $b-large-min: $b-medium-max + 1;
     z-index: 9999;
     background: rgba(255,255,255, 0.8);
   }
+
   .site-title {
     margin-bottom: 20px;
     text-align: center;
@@ -39,6 +40,7 @@ $b-large-min: $b-medium-max + 1;
       }
     }
   }
+
   .header-nav {
     a {
       font-size: 1.4rem;
@@ -50,12 +52,14 @@ $b-large-min: $b-medium-max + 1;
       }
     }
   }
+
   @media (max-width: $b-medium-max) {
     .header-nav {
       li {
         padding-bottom: 10px;
       }
     }
+
     .is-true {
       .site-title {
         margin-bottom: 10px;
@@ -67,11 +71,13 @@ $b-large-min: $b-medium-max + 1;
     header, .header-nav {
       text-align: left;
     }
+
     .header-outer::after {
       content: '';
       display: block;
       overflow: hidden;
     }
+
     .site-title {
       float: left;
       width: 30%;
@@ -80,6 +86,7 @@ $b-large-min: $b-medium-max + 1;
       margin-left: 20px;
       font-size: 2.0rem;
     }
+
     .header-nav {
       float: right;
       ul {
@@ -94,93 +101,80 @@ $b-large-min: $b-medium-max + 1;
     }
   }
 
-//   /** Footer */
-//   .footer-nav {
-//     margin-top: 100px;
-//     font-size: 1.4rem;
-//   }
-//   .copyright-box {
-//     margin: 10px 0 30px;
-//     font-size: 1.2rem;
-//     color: #666;
-//   }
+  /** Footer */
+  .footer-nav {
+    margin-top: 100px;
+    font-size: 1.4rem;
+  }
 
-//   nav, footer {
-//     text-align: center;
-//   }
+  .copyright-box {
+    margin: 10px 0 30px;
+    font-size: 1.2rem;
+    color: #666;
+  }
 
-//   .sns-box {
-//     margin-top: 20px;
-//     text-align: center;
-//   }
-//   .sns-link {
-//     margin: 0 5px;
-//     font-size: 30px;
-//     color: #666;
-//     &:hover {
-//       color: #444;
-//     }
-//   }
-//   .twitter-icon::before {
-//     content: "";
-//     background-image: url("../assets/img/Twitter_Social_Icon_Square_Color.png");
-//     display: inline-block;
-//     width: 1em;
-//     height: 1em;
-//     background-size: contain;
-//     vertical-align: middle;
-//   }
-//   .github-icon::before {
-//     content: "";
-//     background-image: url("../assets/img/GitHub-Mark-64px.png");
-//     display: inline-block;
-//     width: 1em;
-//     height: 1em;
-//     background-size: contain;
-//     vertical-align: middle;
-//   }
-//   .instagram-icon::before {
-//     content: "";
-//     background-image: url("../assets/img/glyph-logo_May2016.png");
-//     display: inline-block;
-//     width: 1em;
-//     height: 1em;
-//     background-size: contain;
-//     vertical-align: middle;
-//   }
-//   .qiita-icon::before {
-//     content: "";
-//     background-image: url("../assets/img/qiita-favicon.png");
-//     display: inline-block;
-//     width: 1em;
-//     height: 1em;
-//     background-size: contain;
-//     vertical-align: middle;
-//   }
+  nav, footer {
+    text-align: center;
+  }
 
-//   .note-icon::before {
-//     content: "";
-//     background-image: url("../assets/img/note.png");
-//     display: inline-block;
-//     width: 1em;
-//     height: 1em;
-//     background-size: contain;
-//     vertical-align: middle;
-//   }
+  .sns-box {
+    margin-top: 20px;
+    text-align: center;
+  }
 
-//   .common-more-box {
-//     text-align: center;
-//     margin-top: 30px;
-//     margin-bottom: 15px;
-//   }
-//   .common-more-box a {
-//     color: #2c3e50;
-//     display: block;
-//     max-width: 300px;
-//     width: 80%;
-//     margin: 0 auto;
-//     padding: .5em;
-//     border: 1px solid CurrentColor;
-//     background-color: transparent;
-//     transition: background-color .3s;
-//   }
+  .sns-link {
+    margin: 0 5px;
+    font-size: 30px;
+    color: #666;
+    &:hover {
+      color: #444;
+    }
+  }
+
+  .twitter-icon::before {
+    content: "";
+    background-image: url("~@/assets/img/twitter-icon.png");
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    background-size: contain;
+    vertical-align: middle;
+  }
+
+  .github-icon::before {
+    content: "";
+    background-image: url("~@/assets/img/github-icon.png");
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    background-size: contain;
+    vertical-align: middle;
+  }
+
+  .qiita-icon::before {
+    content: "";
+    background-image: url("~@/assets/img/qiita-icon.png");
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    background-size: contain;
+    vertical-align: middle;
+  }
+
+  .common-more-box {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 15px;
+  }
+
+  .common-more-box a {
+    color: #2c3e50;
+    display: block;
+    max-width: 300px;
+    width: 80%;
+    margin: 0 auto;
+    padding: .5em;
+    border: 1px solid CurrentColor;
+    background-color: transparent;
+    transition: background-color .3s;
+  }
