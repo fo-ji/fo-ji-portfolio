@@ -1,7 +1,13 @@
 <template>
-  <div class="home">
-    <p>HOME</p>
-  </div>
+  <Home>
+    <div class="home">
+      <div class="container__home">
+        <div class="container__home--text">
+          Welcome to FumiyaOji's Portfolio site
+        </div>
+      </div>
+    </div>
+  </Home>
 </template>
 
 <script>
