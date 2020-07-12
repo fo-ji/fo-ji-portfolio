@@ -280,3 +280,115 @@ $b-large-min: $b-medium-max + 1;
     }
   }
 }
+/** Skill */
+.skill {
+  height: calc(100vh - 260px);
+  margin-top: 84px;
+
+  @media screen and (max-width: 480px) {
+    height: 100%;
+  }
+
+  .container__skill {
+    padding-top: 10px;
+    height: calc(100% - 84px);
+    display: flex;
+
+    @media screen and (max-width: 480px) {
+      flex-direction: column;
+    }
+
+    &--left, &--center, &--right {
+      width: 33.3%;
+      padding-left: 40px;
+
+      @media screen and (max-width: 480px) {
+        width: 100%;
+      }
+
+      .front, .back, .tool {
+        &__title {
+          color: $c-text;
+          font-size: 23px;
+          margin-top: 20px;
+
+          span {
+            background-color:$c-text;
+            color: #fff;
+            border-radius: 3%;
+          }
+        }
+
+        &__content {
+          font-size: 18px;
+          padding: 10px;
+
+          &--list {
+            .list__skill {
+              padding-top: 20px;
+
+              &--name {
+                font-weight: bold;
+              }
+
+              &--evaluate {
+                display: flex;
+
+                .label {
+                  width: 60px;
+                }
+
+                .star {
+                  width: 150px;
+                  height: 30px;
+                }
+              }
+
+              &--intro {
+                display: flex;
+
+                .label {
+                  width: 60px;
+                }
+
+                .introduction {
+                  width: 370px;
+
+                  @media screen and (max-width: 480px) {
+                    width: 300px;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    &--center {
+      @media screen and (max-width: 480px) {
+        width: 100%;
+      }
+    }
+
+    &--right {
+      @media screen and (max-width: 480px) {
+        width: 100%;
+      }
+    }
+  }
+
+  .container__title {
+    &--text {
+      color: $c-text;
+      font-size: 30px;
+      width: 60px;
+      margin-left: 40px;
+      border-bottom: 3px solid CurrentColor;
+
+      @media screen and (max-width: 480px) {
+        margin-top: 140px;
+      }
+    }
+  }
+}
