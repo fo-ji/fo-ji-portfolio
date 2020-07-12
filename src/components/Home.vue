@@ -3,7 +3,7 @@
     <div class="home">
       <div class="container__home">
         <div class="container__home--text">
-          Welcome to FumiyaOji's Portfolio site
+          Welcome to FumiyaOji's Portfolio Site
         </div>
       </div>
     </div>

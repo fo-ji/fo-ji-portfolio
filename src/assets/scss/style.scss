@@ -107,7 +107,7 @@ $b-large-min: $b-medium-max + 1;
 
   /** Footer */
   .footer-nav {
-    margin-top: 100px;
+    margin-top: 10px;
     font-size: 1.4rem;
   }
 
@@ -185,24 +185,97 @@ $b-large-min: $b-medium-max + 1;
 
     /** Home */
 .home {
-  height: calc(100vh - 266px);
+  height: calc(100vh - 260px);
+  margin-top: 84px;
 
   .container__home {
-    height: 65%;
-    position: relative;
-    
+    height: calc(100% - 84px);
+
     &--text {
       width: 100vw;
-      position: absolute;
+      padding-top: 280px;
+      padding-bottom: 150px;
       text-align: center;
-      bottom: 0;
-      font-size: 30px;
+      font-size: 40px;
     }
 
     @media screen and (max-width: 480px) {
       &--text {
-        font-size: 20px;
-        font-weight: bold;
+        font-size: 25px;
+        padding-top: 170px;
+        padding-bottom: 100px;
+      }
+    }
+  }
+}
+/** About */
+.about {
+  height: calc(100vh - 260px);
+  margin-top: 84px;
+
+  @media screen and (max-width: 480px) {
+    height: 100%;
+  }
+
+  .container__about {
+    height: calc(100% - 84px);
+    display: flex;
+
+    @media screen and (max-width: 480px) {
+      flex-direction: column;
+    }
+
+    &--left {
+      width: 50%;
+      position: relative;
+
+      @media screen and (max-width: 480px) {
+        width: 100%;
+        height: 400px;
+      }
+
+      .profile__img {
+        position: absolute;
+        left: 220px;
+        top: 100px;
+        border-radius: 50%;
+
+        @media screen and (max-width: 480px) {
+          left: 40px;
+          top: 40px;
+        }
+      }
+    }
+
+    &--right {
+      height: 100%;
+      width: 50%;
+
+      @media screen and (max-width: 480px) {
+        width: 100%;
+      }
+
+      .title {
+        color: $c-text;
+        font-size: 30px;
+        width: 85px;
+        border-bottom: 3px solid CurrentColor;
+
+        @media screen and (max-width: 480px) {
+          margin-top: 80px;
+          margin-left: 200px;
+        }
+      }
+
+      .text__area {
+        margin-top: 70px;
+        width: 80%;
+        font-size: 23px;
+        color: $c-text;
+
+        @media screen and (max-width: 480px) {
+          margin-left: 60px;
+        }
       }
     }
   }
