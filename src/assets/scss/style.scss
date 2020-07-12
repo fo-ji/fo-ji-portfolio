@@ -392,3 +392,123 @@ $b-large-min: $b-medium-max + 1;
     }
   }
 }
+/** Work */
+.work {
+  height: calc(100vh - 260px);
+  margin-top: 84px;
+
+  @media screen and (max-width: 480px) {
+    height: 100%;
+  }
+
+  .container__work {
+    padding-top: 10px;
+    height: calc(100% - 84px);
+    display: flex;
+
+    @media screen and (max-width: 480px) {
+      flex-direction: column;
+    }
+
+    &--left, &--center, &--right {
+      width: 33.3%;
+      padding-left: 40px;
+
+      @media screen and (max-width: 480px) {
+        width: 100%;
+      }
+
+      .app {
+        &__title {
+          color: $c-text;
+          font-size: 23px;
+          margin-top: 20px;
+          text-align: center;
+
+          span {
+            background-color: $c-text;
+            color: #fff;
+            border-radius: 3%;
+          }
+        }
+
+        &__content {
+          padding-top: 15px;
+
+          .image__content {
+            margin-left: 30px;
+
+            @media screen and (max-width: 480px) {
+              margin: 0;
+            }
+
+            .site-image {
+              height: 320px;
+              width: 450px;
+
+              @media screen and (max-width: 480px) {
+                width: 400px;
+              }
+              
+              &:hover {
+                opacity: 0.5;
+                transition-duration: 0.3s;
+                border: 1px solid $c-text;
+              }
+            }
+          }
+
+          .text__content {
+            margin-top: 20px;
+
+            &--name {
+              padding-top: 30px;
+              font-weight: bold;
+            }
+
+            &--skill {
+              margin-top: 10px;
+              display: flex;
+              width: 100%;
+              height: 100px;
+
+              .content__label {
+                width: 20%;
+              }
+
+              .content__skill {
+                width: 80%;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    &--center {
+      @media screen and (max-width: 480px) {
+        width: 100%;
+      }
+    }
+
+    &--right {
+      @media screen and (max-width: 480px) {
+        width: 100%;
+      }
+    }
+  }
+
+  .container__title {
+    &--text {
+      color: $c-text;
+      font-size: 30px;
+      width: 68px;
+      margin-left: 40px;
+      border-bottom: 3px solid CurrentColor;
+
+      @media screen and (max-width: 480px) {
+        margin-top: 140px;
+      }
+    }
+  }
+}
