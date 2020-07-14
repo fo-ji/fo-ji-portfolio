@@ -17,15 +17,6 @@
       </nav>
     </div>
     <router-view/>
-    <nav class="footer-nav">
-      <ul>
-        <li><router-link to="/">Home</router-link></li>
-        <li><router-link to="/about">About</router-link></li>
-        <li><router-link to="/skill">Skill</router-link></li>
-        <li><router-link to="/work">Work</router-link></li>
-        <li><router-link to="/contact">Contact</router-link></li>
-      </ul>
-    </nav>
     <div class="sns-box">
       <a href="https://twitter.com/foji89872898" target="_blank" class="sns-link">
         <i class="fab twitter-icon"></i>
