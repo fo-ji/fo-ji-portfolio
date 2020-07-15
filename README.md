@@ -12,7 +12,7 @@
 
  - レスポンシブ対応
  - 操作していただくのは、headerのページ切り替えのみです。<br>スクロールも必要なくすべての情報を見ていただけます。
- [![Image from Gyazo](https://i.gyazo.com/605aa5ffa8954608b1668f7ffed0290c.gif)](https://gyazo.com/605aa5ffa8954608b1668f7ffed0290c)
+[![Image from Gyazo](https://i.gyazo.com/28fd42e504c3e9af3c6df06b2a3a8355.gif)](https://gyazo.com/28fd42e504c3e9af3c6df06b2a3a8355)
 
 
 ## 詳細
