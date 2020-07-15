@@ -11,8 +11,6 @@ $b-large-min: $b-medium-max + 1;
     "Hiragino Sans",
     Meiryo,
     sans-serif;
-    // height: 100%;
-    // width: 100%;
 }
 /** Header */
 .header-nav, .footer-nav {
@@ -236,6 +234,7 @@ $b-large-min: $b-medium-max + 1;
         left: 220px;
         top: 100px;
         border-radius: 50%;
+        border: 1px solid $c-text;
         @media screen and (max-width: 900px) {
           left: 90px;
           top: 40px;

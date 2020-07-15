@@ -3,7 +3,7 @@
     <div class="about">
       <div class="container__about">
         <div class="container__about--left">
-          <img src="@/assets/img/profile-image.png" class="profile__img" alt="プロフィール写真" width="400" height="400"/>
+          <img src="@/assets/img/profile-photo.png" class="profile__img" alt="プロフィール写真" width="400" height="400"/>
         </div>
         <div class="container__about--right">
           <div class="title">About</div>
